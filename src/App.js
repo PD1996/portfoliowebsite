@@ -13,7 +13,11 @@ function App() {
               tag: "h1",
             },
             {
-              text: "Hello, I'm Peter! 👋 Welcome to my portfolio website.",
+              text: "Hello, I'm Peter! 👋",
+              tag: "h2",
+            },
+            {
+              text: "Welcome to my portfolio website.",
               tag: "h2",
             },
           ]}
