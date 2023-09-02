@@ -1,4 +1,5 @@
 import React from "react";
+import "./Portfolio.css";
 
 function Portfolio() {
   return (
@@ -11,11 +12,11 @@ function Portfolio() {
         </div>
         <div className="portfolio-card">
           <h2>Project 2</h2>
-          <p>Short description of project 1.</p>
+          <p>Short description of project 2.</p>
         </div>
         <div className="portfolio-card">
           <h2>Project 3</h2>
-          <p>Short description of project 1.</p>
+          <p>Short description of project 3.</p>
         </div>
       </div>
     </div>
