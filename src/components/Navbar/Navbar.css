@@ -3,13 +3,15 @@
   cursor: pointer;
 }
 
-/* Hover effect */
-.nav-link:hover {
-  color: #007bff; /* Change this to your preferred hover color */
+.nav-link-right {
+  cursor: pointer;
 }
 
-/* Active (selected) link effect */
+.nav-link:hover {
+  color: #007bff;
+}
+
 .active {
   font-weight: bold;
-  color: #333; /* Change this to your preferred active link color */
+  color: #333;
 }

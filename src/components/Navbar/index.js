@@ -30,7 +30,7 @@ function Navbar() {
       </Link>
 
       <Link
-        className="nav-link"
+        className="nav-link-right"
         activeClass="active"
         to="contact"
         spy={true}
