@@ -7,16 +7,12 @@ function About() {
       <TypingEffect
         texts={[
           {
-            text: "Software Developer | Tech Enthusiast | Lifelong Learner",
+            text: "Hi there, I'm Peter! 👋",
             tag: "h1",
           },
           {
-            text: "Hello, I'm Peter! 👋",
-            tag: "h2",
-          },
-          {
             text: "Welcome to my portfolio website.",
-            tag: "h2",
+            tag: "p",
           },
         ]}
       />
