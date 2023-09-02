@@ -1,28 +1,25 @@
 import "./App.css";
 
-import TypingEffect from "./components/TypingEffect";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="site-container">
-      <header className="main-header">
-        <TypingEffect
-          texts={[
-            {
-              text: "Software Developer | Tech Enthusiast | Lifelong Learner",
-              tag: "h1",
-            },
-            {
-              text: "Hello, I'm Peter! 👋",
-              tag: "h2",
-            },
-            {
-              text: "Welcome to my portfolio website.",
-              tag: "h2",
-            },
-          ]}
-        />
-      </header>
+      <Navbar />
+      <div className="section-fullscreen" id="about">
+        <About />
+      </div>
+      <div className="section-fullscreen" id="portfolio">
+        <Portfolio />
+      </div>
+      <div className="section-fullscreen" id="contact">
+        <Contact />
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .site-container {
   text-align: center;
+  padding-top: 80px;
 }
 
 .logo {
@@ -7,16 +8,26 @@
   pointer-events: none;
 }
 
-.main-header {
-  font-family: "Arial", sans-serif;
-  padding: 2rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-link {
   color: var(--link-color);
+}
+
+.section-fullscreen {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
