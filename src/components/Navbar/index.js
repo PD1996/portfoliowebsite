@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { slide as Menu } from "react-burger-menu";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
-import "./Navbar.css";
 
 import DarkModeToggle from "./DarkModeToggle";
+
+import "./Navbar.css";
 
 function Navbar({ onToggleDarkMode, isDarkMode }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -25,6 +27,10 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
 
   const MobileMenu = () => (
     <Menu right>
+      <DarkModeToggle
+        onToggleDarkMode={onToggleDarkMode}
+        isDarkMode={isDarkMode}
+      />
       <Link
         className="nav-link"
         activeClass="active"
@@ -63,15 +69,14 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
 
   return (
     <nav>
-      <DarkModeToggle
-        onToggleDarkMode={onToggleDarkMode}
-        isDarkMode={isDarkMode}
-      />
-
       {isMobile ? (
         <MobileMenu />
       ) : (
         <>
+          <DarkModeToggle
+            onToggleDarkMode={onToggleDarkMode}
+            isDarkMode={isDarkMode}
+          />
           <div className="nav-links">
             <Link
               className="nav-link"
