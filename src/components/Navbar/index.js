@@ -23,11 +23,7 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
   }, []);
 
   const MobileMenu = () => (
-    <Menu right>
-      <DarkModeToggle
-        onToggleDarkMode={onToggleDarkMode}
-        isDarkMode={isDarkMode}
-      />
+    <Menu>
       <Link
         className="nav-link"
         activeClass="active"
@@ -61,20 +57,23 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
       >
         Contact
       </Link>
-      <IconLinks />
+      <IconLinks className="bm-item-bottom" />
     </Menu>
   );
 
   return (
-    <nav>
+    <nav className="desktop-nav">
       {isMobile ? (
-        <MobileMenu />
-      ) : (
         <>
+          <MobileMenu />
           <DarkModeToggle
             onToggleDarkMode={onToggleDarkMode}
             isDarkMode={isDarkMode}
           />
+        </>
+      ) : (
+        <>
+          <IconLinks />
           <div className="nav-links">
             <Link
               className="nav-link"
@@ -110,7 +109,10 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
               Contact
             </Link>
           </div>
-          <IconLinks />
+          <DarkModeToggle
+            onToggleDarkMode={onToggleDarkMode}
+            isDarkMode={isDarkMode}
+          />
         </>
       )}
     </nav>

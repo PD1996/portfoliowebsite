@@ -1,11 +1,12 @@
-nav {
+.desktop-nav {
   position: fixed;
+  height: 2em;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
   z-index: 1000;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +24,7 @@ nav {
 .nav-link-right {
   cursor: pointer;
   margin: 0 15px;
+  font-size: 1.25em;
 }
 
 .nav-link:hover,
@@ -84,7 +86,6 @@ nav {
   align-items: center;
   cursor: pointer;
   gap: 10px;
-  justify-content: space-between;
 }
 
 .toggle-wrapper {
@@ -149,4 +150,52 @@ nav {
   .bm-burger-button {
     display: none;
   }
+}
+
+.bm-menu-wrap {
+  width: 50% !important;
+  background-color: #ffffff;
+  padding: 1em;
+  margin-left: -2em;
+}
+
+.bm-burger-button {
+  position: relative;
+  width: 26px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.bm-burger-button span {
+  background-color: #678da2;
+}
+
+.bm-burger-bars {
+  background-color: #678da2 !important;
+}
+
+.bm-item-list {
+  padding: 1em;
+  padding-top: 25vh;
+}
+
+.bm-item {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 2em;
+  padding-left: 0.2em;
+  align-self: center;
+}
+
+.bm-item-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.bm-overlay {
+  margin-top: 2.5em !important;
+  height: 200% !important;
+  width: 200% !important;
 }

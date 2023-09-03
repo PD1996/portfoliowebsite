@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 
-function IconLinks() {
+function IconLinks({ className }) {
   return (
-    <div className="icon-links">
+    <div className={`icon-links ${className}`}>
       <a
         href="https://github.com/PD1996"
         target="_blank"

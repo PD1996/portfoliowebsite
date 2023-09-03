@@ -1,8 +1,8 @@
 import React from "react";
 
-function DarkModeToggle({ onToggleDarkMode, isDarkMode }) {
+function DarkModeToggle({ onToggleDarkMode, isDarkMode, className }) {
   return (
-    <div className="toggle-container" onClick={onToggleDarkMode}>
+    <div className={`toggle-container ${className}`} onClick={onToggleDarkMode}>
       <span
         className={`toggle-emoji light-emoji ${!isDarkMode ? "enlarged" : ""}`}
       >
