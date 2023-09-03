@@ -87,7 +87,7 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
           <FontAwesomeIcon icon={faLinkedin} className="nav-icon linkedin" />
         </a>
         <a
-          href="Resume - Peter Dyczkowski.pdf"
+          href="Peter Dyczkowski Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
