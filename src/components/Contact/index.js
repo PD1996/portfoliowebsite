@@ -1,9 +1,10 @@
 import React from "react";
+import "./Contact.css";
 
 function Contact() {
   return (
-    <div id="contact">
-      <h2>Contact Me</h2>
+    <div>
+      <h1>Contact Me</h1>
       <form>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />

@@ -1,0 +1,53 @@
+form {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #999;
+  font-weight: 300;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form button {
+  background-color: #678da2;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0px);
+}
