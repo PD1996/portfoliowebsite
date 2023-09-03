@@ -5,9 +5,36 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ onToggleDarkMode, isDarkMode }) {
   return (
     <nav>
+      <div className="toggle-container" onClick={onToggleDarkMode}>
+        <span
+          className={`toggle-emoji light-emoji ${
+            !isDarkMode ? "enlarged" : ""
+          }`}
+        >
+          🙈
+        </span>
+        <div className="toggle-wrapper">
+          <input
+            id="darkModeToggle"
+            type="checkbox"
+            className="toggle-input"
+            checked={isDarkMode}
+            onChange={() => {}}
+          />
+          <label htmlFor="darkModeToggle" className="toggle-label">
+            <div className="toggle-switch"></div>
+          </label>
+        </div>
+        <span
+          className={`toggle-emoji dark-emoji ${isDarkMode ? "enlarged" : ""}`}
+        >
+          😎
+        </span>
+      </div>
+
       <div className="nav-links">
         <Link
           className="nav-link"
@@ -20,7 +47,6 @@ function Navbar() {
         >
           About
         </Link>
-
         <Link
           className="nav-link"
           activeClass="active"
@@ -32,9 +58,8 @@ function Navbar() {
         >
           Portfolio
         </Link>
-
         <Link
-          className="nav-link-right"
+          className="nav-link"
           activeClass="active"
           to="contact"
           spy={true}

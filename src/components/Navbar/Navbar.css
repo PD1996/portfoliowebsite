@@ -77,3 +77,70 @@ nav {
 .nav-icon.pdf:hover {
   color: red;
 }
+
+.toggle-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.toggle-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  background-color: #678da2;
+  border-radius: 15px;
+}
+
+.toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  border: none;
+}
+
+.toggle-switch {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-input:checked + .toggle-label .toggle-switch {
+  transform: translateX(28px);
+}
+
+.toggle-emoji {
+  font-size: 20px;
+  transition: font-size 0.3s;
+}
+
+.toggle-input:not(:checked) ~ .light-emoji {
+  font-size: 30px;
+}
+
+.toggle-input:checked ~ .dark-emoji {
+  font-size: 30px;
+}
+
+.enlarged {
+  transform: scale(1.5);
+}
