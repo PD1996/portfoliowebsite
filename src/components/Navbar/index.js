@@ -6,6 +6,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import "./Navbar.css";
 
+import DarkModeToggle from "./DarkModeToggle";
+
 function Navbar({ onToggleDarkMode, isDarkMode }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -61,32 +63,10 @@ function Navbar({ onToggleDarkMode, isDarkMode }) {
 
   return (
     <nav>
-      <div className="toggle-container" onClick={onToggleDarkMode}>
-        <span
-          className={`toggle-emoji light-emoji ${
-            !isDarkMode ? "enlarged" : ""
-          }`}
-        >
-          🙈
-        </span>
-        <div className="toggle-wrapper">
-          <input
-            id="darkModeToggle"
-            type="checkbox"
-            className="toggle-input"
-            checked={isDarkMode}
-            onChange={() => {}}
-          />
-          <label htmlFor="darkModeToggle" className="toggle-label">
-            <div className="toggle-switch"></div>
-          </label>
-        </div>
-        <span
-          className={`toggle-emoji dark-emoji ${isDarkMode ? "enlarged" : ""}`}
-        >
-          😎
-        </span>
-      </div>
+      <DarkModeToggle
+        onToggleDarkMode={onToggleDarkMode}
+        isDarkMode={isDarkMode}
+      />
 
       {isMobile ? (
         <MobileMenu />
