@@ -152,13 +152,6 @@
   }
 }
 
-.bm-menu-wrap {
-  width: 50% !important;
-  background-color: #ffffff;
-  padding: 1em;
-  margin-left: -2em;
-}
-
 .bm-burger-button {
   position: relative;
   width: 26px;
@@ -172,6 +165,19 @@
 
 .bm-burger-bars {
   background-color: #678da2 !important;
+}
+
+.bm-overlay {
+  margin-top: 2.5em !important;
+  height: 200% !important;
+  width: 200% !important;
+}
+
+.bm-menu-wrap {
+  width: 50% !important;
+  background-color: #ffffff;
+  padding: 1em;
+  margin-left: -2em;
 }
 
 .bm-item-list {
@@ -190,10 +196,4 @@
   align-items: center;
   padding-top: 4em;
   padding-left: 0.2em;
-}
-
-.bm-overlay {
-  margin-top: 2.5em !important;
-  height: 200% !important;
-  width: 200% !important;
 }
