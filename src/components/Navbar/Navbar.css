@@ -218,7 +218,7 @@ body.dark-mode .bm-overlay {
 
 .bm-menu-wrap {
   width: 50% !important;
-  background-color: var(--light-theme-bg-color);
+  background-color: #fff;
   padding: 1em;
   margin-left: -2em;
 }
