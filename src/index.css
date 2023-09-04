@@ -8,6 +8,8 @@
   --dark-theme-bg-color: #333;
   --dark-theme-text-color: #f5f5f5;
   --dark-theme-link-color: #61dafb;
+  --dark-theme-email-link-color: #61dafb;
+  --dark-theme-link-hover-color: #61dafb;
 }
 
 body {

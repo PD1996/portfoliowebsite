@@ -12,7 +12,7 @@ function Contact() {
         <button type="submit">Send Message</button>
       </form>
       <p>
-        Alternatively, you can email me:{" "}
+        Alternatively, you can email me directly:{" "}
         <a href="mailto:peter@peterprogramming.com">
           peter@peterprogramming.com
         </a>

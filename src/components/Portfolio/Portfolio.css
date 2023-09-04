@@ -7,13 +7,22 @@
 }
 
 .portfolio-card {
-  background-color: #f9f9f9;
+  background-color: var(--light-theme-bg-color);
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  color: var(--light-theme-text-color);
   min-width: 250px;
+}
+
+body.dark-mode .portfolio-card {
+  background-color: var(--dark-theme-bg-color);
+  border: 1px solid #555;
+  color: var(--dark-theme-text-color);
 }
 
 .portfolio-card:hover {
