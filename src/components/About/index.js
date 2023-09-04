@@ -8,8 +8,12 @@ function About() {
       <TypingEffect
         texts={[
           {
-            text: "Hello World! I'm Peter 👋",
+            text: "Hello World!",
             tag: "h1",
+          },
+          {
+            text: "I'm Peter Dyczkowski 👋",
+            tag: "h2",
           },
           {
             text: "From the heart of Kelowna, BC, Canada, my journey in tech has been driven by a desire to solve real-world challenges.",

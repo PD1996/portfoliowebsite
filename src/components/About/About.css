@@ -1,4 +1,13 @@
-.about-container {
-  padding-left: 30vw;
-  padding-right: 30vw;
+@media screen and (min-width: 769px) {
+  .about-container {
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
