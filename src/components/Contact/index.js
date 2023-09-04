@@ -11,6 +11,12 @@ function Contact() {
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      <p>
+        Alternatively, you can email me:{" "}
+        <a href="mailto:peter@peterprogramming.com">
+          peter@peterprogramming.com
+        </a>
+      </p>
     </div>
   );
 }
