@@ -21,13 +21,13 @@ function IconLinks({ className }) {
       >
         <FontAwesomeIcon icon={faLinkedin} className="nav-icon linkedin" />
       </a>
-      <a
+      {/* <a
         href="Peter Dyczkowski Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faFilePdf} className="nav-icon pdf" />
-      </a>
+      </a> */}
     </div>
   );
 }
