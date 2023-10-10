@@ -10,13 +10,23 @@
   background-color: var(--light-theme-bg-color);
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition:
     transform 0.3s,
     box-shadow 0.3s;
   color: var(--light-theme-text-color);
   min-width: 250px;
+  cursor: pointer;
+}
+
+.portfolio-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 body.dark-mode .portfolio-card {
@@ -30,9 +40,24 @@ body.dark-mode .portfolio-card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Collapsibility styles for mobile */
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.card-expanded .card-content {
+  max-height: 80vh;
+}
+
 @media screen and (min-width: 1000px) {
   .portfolio-container {
     grid-template-columns: repeat(3, 1fr);
-    height: 40vh;
+  }
+
+  /* Reset the collapsibility on desktop to always show content */
+  .card-content {
+    max-height: none;
   }
 }
