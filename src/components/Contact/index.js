@@ -1,16 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    _replyto: "",
+    message: "",
+  });
+
+  const [confirmation, setConfirmation] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("https://formspree.io/f/mpzgrrvo", {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      setConfirmation(true);
+      setFormData({ name: "", _replyto: "", message: "" }); // reset the form
+    } else {
+      alert("There was an error. Please try again.");
+    }
+  };
+
   return (
     <div>
       <h1>Contact Me</h1>
-      <form action="https://formspree.io/f/mpzgrrvo" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+
+      {confirmation ? (
+        <p>Thank you for your message. I'll get back to you soon!</p>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your Email"
+            required
+            value={formData._replyto}
+            onChange={handleChange}
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      )}
 
       <p>
         Alternatively, you can email me directly:{" "}
