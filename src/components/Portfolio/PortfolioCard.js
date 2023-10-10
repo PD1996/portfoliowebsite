@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faExternalLinkAlt,
+  faChevronUp,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 function PortfolioCard({
   title,
@@ -26,7 +30,9 @@ function PortfolioCard({
       <h3>
         {title}
         <span className="toggle-arrow">
-          {expandedCard === cardNumber ? "▲" : "▼"}
+          <FontAwesomeIcon
+            icon={expandedCard === cardNumber ? faChevronUp : faChevronDown}
+          />
         </span>
         <a
           href={link}
