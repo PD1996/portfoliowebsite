@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
-  const [expandedCard, setExpandedCard] = useState(null); // Track the currently expanded card
+  const [expandedCard, setExpandedCard] = useState(null);
 
   const toggleCard = (cardIndex) => {
     if (expandedCard === cardIndex) {
@@ -26,32 +28,50 @@ function Portfolio() {
           }`}
           onClick={() => toggleCard(1)}
         >
-          <h2>
+          <h3>
             Project 1
             <span className="toggle-arrow">
               {expandedCard === 1 ? "▲" : "▼"}
             </span>
-          </h2>
+            <a
+              href="https://link-to-project1.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-link-icon"
+            >
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
+          </h3>
           <div className="card-content">
             <p>Short description of project 1.</p>
           </div>
         </div>
+
         <div
           className={`portfolio-card ${
             expandedCard === 2 ? "card-expanded" : ""
           }`}
           onClick={() => toggleCard(2)}
         >
-          <h2>
+          <h3>
             Project 2
             <span className="toggle-arrow">
               {expandedCard === 2 ? "▲" : "▼"}
             </span>
-          </h2>
+            <a
+              href="https://link-to-project2.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-link-icon"
+            >
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
+          </h3>
           <div className="card-content">
             <p>Short description of project 2.</p>
           </div>
         </div>
+
         <div
           className={`portfolio-card ${
             expandedCard === 3 ? "card-expanded" : ""
@@ -59,10 +79,18 @@ function Portfolio() {
           onClick={() => toggleCard(3)}
         >
           <h3>
-            Pythagorean Theorem Visualization Tool
+            Pythagorean Visualization Tool
             <span className="toggle-arrow">
               {expandedCard === 3 ? "▲" : "▼"}
             </span>
+            <a
+              href="https://github.com/PD1996/.NET-Pythagorean-Theorem-Visualization-Tool"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-link-icon"
+            >
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
+            </a>
           </h3>
           <div className="card-content">
             <img

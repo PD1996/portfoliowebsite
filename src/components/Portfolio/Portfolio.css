@@ -29,6 +29,21 @@
   border-radius: 8px;
 }
 
+.card-link-icon {
+  float: right;
+  text-decoration: none;
+  font-size: 1.2em;
+  /* margin-left: 10px; */
+  background: none;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+}
+
+.card-link-icon:hover {
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
 body.dark-mode .portfolio-card {
   background-color: var(--dark-theme-bg-color);
   border: 1px solid #555;
@@ -40,7 +55,6 @@ body.dark-mode .portfolio-card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Collapsibility styles for mobile */
 .card-content {
   max-height: 0;
   overflow: hidden;
@@ -50,6 +64,21 @@ body.dark-mode .portfolio-card {
 .toggle-arrow {
   margin-left: 10px;
   user-select: none;
+}
+
+.card-link-icon {
+  float: right;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-left: 10px;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card-link-icon:hover {
+  text-decoration: underline;
 }
 
 .card-expanded .card-content {
@@ -69,7 +98,6 @@ body.dark-mode .portfolio-card {
     display: none;
   }
 
-  /* Reset the collapsibility on desktop to always show content */
   .card-content {
     max-height: none;
   }
