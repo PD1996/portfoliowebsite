@@ -8,29 +8,34 @@ function Portfolio() {
   return (
     <div id="portfolio">
       <h1>Portfolio</h1>
-      <p>
-        Here are some fun personal projects I've worked on (or am currently
-        working on) in my spare time!
-      </p>
+      <div className="text-container">
+        <p>
+          Here are some fun personal projects I've worked on (or am currently
+          working on) in my spare time!
+        </p>
+      </div>
       <div className="portfolio-container">
         <PortfolioCard
-          title="Project 1"
-          link="https://link-to-project1.com"
+          title="This Website!"
+          link="https://github.com/PD1996/portfoliowebsite/tree/main/src"
           cardNumber={1}
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <p>Short description of project 1.</p>
+          <img src="code.png" alt="Code" />
+          <p>A simple website built with React and JavaScript.</p>
+          <h5>2023</h5>
         </PortfolioCard>
 
         <PortfolioCard
-          title="Project 2"
-          link="https://link-to-project2.com"
+          title="AI Chess Bot"
           cardNumber={2}
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <p>Short description of project 2.</p>
+          <img src="chess.png" alt="Chessboard" />
+          <p>♟️</p>
+          <h5>Coming Soon!</h5>
         </PortfolioCard>
 
         <PortfolioCard
@@ -42,8 +47,8 @@ function Portfolio() {
         >
           <img src="pythagorean.png" alt="Pythagorean Theorem Visualization" />
           <p>
-            A simple Windows desktop application used to visualize the
-            Pythagorean Theorem (A² + B² = C²).
+            A Windows desktop application built with C# and .NET used to
+            visualize the Pythagorean Theorem (A² + B² = C²).
           </p>
           <h5>March, 2019</h5>
         </PortfolioCard>
