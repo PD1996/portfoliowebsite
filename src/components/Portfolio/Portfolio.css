@@ -22,7 +22,7 @@
 }
 
 .portfolio-card img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -47,6 +47,11 @@ body.dark-mode .portfolio-card {
   transition: max-height 0.3s ease;
 }
 
+.toggle-arrow {
+  margin-left: 10px;
+  user-select: none;
+}
+
 .card-expanded .card-content {
   max-height: 80vh;
 }
@@ -54,6 +59,14 @@ body.dark-mode .portfolio-card {
 @media screen and (min-width: 1000px) {
   .portfolio-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio-card img {
+    max-width: 100%;
+  }
+
+  .toggle-arrow {
+    display: none;
   }
 
   /* Reset the collapsibility on desktop to always show content */

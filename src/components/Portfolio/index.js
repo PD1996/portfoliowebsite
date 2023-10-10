@@ -26,7 +26,12 @@ function Portfolio() {
           }`}
           onClick={() => toggleCard(1)}
         >
-          <h2>Project 1</h2>
+          <h2>
+            Project 1
+            <span className="toggle-arrow">
+              {expandedCard === 1 ? "▲" : "▼"}
+            </span>
+          </h2>
           <div className="card-content">
             <p>Short description of project 1.</p>
           </div>
@@ -37,7 +42,12 @@ function Portfolio() {
           }`}
           onClick={() => toggleCard(2)}
         >
-          <h2>Project 2</h2>
+          <h2>
+            Project 2
+            <span className="toggle-arrow">
+              {expandedCard === 2 ? "▲" : "▼"}
+            </span>
+          </h2>
           <div className="card-content">
             <p>Short description of project 2.</p>
           </div>
@@ -48,7 +58,12 @@ function Portfolio() {
           }`}
           onClick={() => toggleCard(3)}
         >
-          <h3>Pythagorean Theorem Visualization Tool</h3>
+          <h3>
+            Pythagorean Theorem Visualization Tool
+            <span className="toggle-arrow">
+              {expandedCard === 3 ? "▲" : "▼"}
+            </span>
+          </h3>
           <div className="card-content">
             <img
               src="pythagorean.png"
