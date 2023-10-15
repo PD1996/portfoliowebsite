@@ -29,6 +29,7 @@ function Portfolio() {
 
         <PortfolioCard
           title="AI Chess Bot"
+          link="https://github.com/PD1996/ai-chess-bot"
           cardNumber={2}
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
