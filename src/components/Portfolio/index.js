@@ -36,7 +36,7 @@ function Portfolio() {
         >
           <img src="chess.png" alt="Chessboard" />
           <p>♟️</p>
-          <h5>Coming Soon!</h5>
+          <h5>October, 2023 - In Progress</h5>
         </PortfolioCard>
 
         <PortfolioCard
