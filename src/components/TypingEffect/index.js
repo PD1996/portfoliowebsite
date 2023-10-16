@@ -9,12 +9,12 @@ function TypingEffect({ texts }) {
       if (charIndex < texts[textIndex].text.length) {
         setTimeout(() => {
           setCharIndex(charIndex + 1);
-        }, 50); // typing speed in ms
+        }, 25); // typing speed in ms
       } else if (textIndex < texts.length - 1) {
         setTimeout(() => {
           setTextIndex(textIndex + 1);
           setCharIndex(0);
-        }, 500); // delay in ms before starting next text
+        }, 250); // delay in ms before starting next text
       }
     }
   }, [charIndex, textIndex, texts]);
