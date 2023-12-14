@@ -8,20 +8,12 @@ function About() {
       <TypingEffect
         texts={[
           {
-            text: "Hello World!",
+            text: "Peter Dyczkowski",
             tag: "h1",
           },
           {
-            text: "I'm Peter Dyczkowski 👋",
+            text: "Full-Stack Software Developer",
             tag: "h2",
-          },
-          {
-            text: "A full-stack software developer with a passion for utilizing creativity to solve real-world problems.",
-            tag: "h3",
-          },
-          {
-            text: "I like to keep myself open to new opportunities and challenges, so please feel free to connect!",
-            tag: "p",
           },
         ]}
       />
