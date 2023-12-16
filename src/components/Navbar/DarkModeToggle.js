@@ -6,7 +6,7 @@ function DarkModeToggle({ onToggleDarkMode, isDarkMode, className }) {
       <span
         className={`toggle-emoji light-emoji ${!isDarkMode ? "enlarged" : ""}`}
       >
-        🙈
+        ☀️
       </span>
       <div className="toggle-wrapper">
         <input
@@ -23,7 +23,7 @@ function DarkModeToggle({ onToggleDarkMode, isDarkMode, className }) {
       <span
         className={`toggle-emoji dark-emoji ${isDarkMode ? "enlarged" : ""}`}
       >
-        😎
+        🌙
       </span>
     </div>
   );
