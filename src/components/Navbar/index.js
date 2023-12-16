@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { slide as Menu } from "react-burger-menu";
-import { useHistory } from "react-router-dom";
 
 import DarkModeToggle from "./DarkModeToggle";
 import IconLinks from "./IconLinks";
