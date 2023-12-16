@@ -40,7 +40,7 @@ function Contact() {
 
   return (
     <div>
-      <h1>Contact Me</h1>
+      <h1>Contact</h1>
 
       {confirmation ? (
         <p>Thank you for your message. I'll get back to you soon!</p>
