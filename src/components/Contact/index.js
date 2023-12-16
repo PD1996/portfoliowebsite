@@ -6,6 +6,7 @@ function Contact() {
     name: "",
     _replyto: "",
     message: "",
+    company: "",
   });
 
   const [confirmation, setConfirmation] = useState(false);
@@ -31,7 +32,7 @@ function Contact() {
 
     if (response.ok) {
       setConfirmation(true);
-      setFormData({ name: "", _replyto: "", message: "" }); // reset the form
+      setFormData({ name: "", _replyto: "", message: "", company: "" }); // reset the form
     } else {
       alert("There was an error. Please try again.");
     }
@@ -44,40 +45,48 @@ function Contact() {
       {confirmation ? (
         <p>Thank you for your message. I'll get back to you soon!</p>
       ) : (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-          />
-          <input
-            type="email"
-            name="_replyto"
-            placeholder="Your Email"
-            required
-            value={formData._replyto}
-            onChange={handleChange}
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-            value={formData.message}
-            onChange={handleChange}
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="Email"
+              required
+              value={formData._replyto}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              value={formData.company}
+              onChange={handleChange}
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              required
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p>
+            Alternatively, you can email me directly:{" "}
+            <a href="mailto:peter@peterprogramming.com">
+              peter@peterprogramming.com
+            </a>
+          </p>
+        </>
       )}
-
-      <p>
-        Alternatively, you can email me directly:{" "}
-        <a href="mailto:peter@peterprogramming.com">
-          peter@peterprogramming.com
-        </a>
-      </p>
     </div>
   );
 }
