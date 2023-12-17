@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 import Earth from "./Earth";
 import "./EarthModel.css";
@@ -16,6 +17,7 @@ function EarthModel() {
           position={(0, 10, 10)}
         />
         <Earth position={[0, 0, 0]} />
+        <OrbitControls enableDamping enablePan={false} enableZoom={false} />
       </Canvas>
     </section>
   );
