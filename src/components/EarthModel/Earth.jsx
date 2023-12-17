@@ -17,11 +17,7 @@ function Earth(props) {
   const { nodes, materials } = useGLTF("./earth.glb");
   return (
     <a.group ref={earthRef} {...props}>
-      <mesh
-        geometry={nodes.Object_2.geometry}
-        material={materials.moon}
-        rotation={[-Math.PI / 2, 0, 0]}
-      />
+      <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
     </a.group>
   );
 }
