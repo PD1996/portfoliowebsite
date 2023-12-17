@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 
 import Earth from "./Earth";
-
 import "./EarthModel.css";
 
 function EarthModel() {

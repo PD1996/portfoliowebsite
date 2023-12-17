@@ -7,14 +7,19 @@ Title: Earth
 */
 
 import React, { useRef } from "react";
-
 import { useGLTF } from "@react-three/drei";
-
+import { useFrame } from "@react-three/fiber";
 import { a } from "@react-spring/three";
 
 function Earth(props) {
   const earthRef = useRef();
   const { nodes, materials } = useGLTF("./earth.glb");
+
+  useFrame(({ clock }) => {
+    const elapsedTime = clock.getElapsedTime();
+    earthRef.current.rotation.y = elapsedTime / 10;
+  });
+
   return (
     <a.group ref={earthRef} {...props}>
       <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
