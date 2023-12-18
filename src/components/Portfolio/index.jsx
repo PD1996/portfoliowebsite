@@ -23,7 +23,9 @@ function Portfolio() {
           setExpandedCard={setExpandedCard}
         >
           <img src="code.png" alt="Code" />
-          <p>A simple website built with React and JavaScript.</p>
+          <p>
+            A simple React website that uses React Three Fiber for 3D effects.
+          </p>
           <h5>2023</h5>
         </PortfolioCard>
 
@@ -35,7 +37,10 @@ function Portfolio() {
           setExpandedCard={setExpandedCard}
         >
           <img src="chess.png" alt="Chessboard" />
-          <p>♟️</p>
+          <p>
+            Will contain multiple chess engines trained in different ways for
+            experimental purposes.
+          </p>
           <h5>October, 2023 - In Progress</h5>
         </PortfolioCard>
 
