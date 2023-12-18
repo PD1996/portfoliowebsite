@@ -17,7 +17,13 @@ function EarthModel() {
           position={(0, 10, 10)}
         />
         <Earth position={[0, 0, 0]} />
-        <OrbitControls enableDamping enablePan={false} enableZoom={false} />
+        <OrbitControls
+          autoRotate
+          autoRotateSpeed={2}
+          enableDamping
+          enablePan={false}
+          enableZoom={false}
+        />
       </Canvas>
     </section>
   );
