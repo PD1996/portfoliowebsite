@@ -10,13 +10,18 @@ import React, { useRef, useEffect } from "react";
 
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { a } from "@react-spring/three";
+import { a, useSpring } from "@react-spring/three";
 
 import * as THREE from "three";
 
 function Earth(props) {
   const earthRef = useRef();
   const { nodes, materials } = useGLTF("./earth.glb");
+
+  const { scale } = useSpring({
+    from: { scale: [0, 0, 0] },
+    to: { scale: [1, 1, 1] },
+  });
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
@@ -33,7 +38,7 @@ function Earth(props) {
   }, []);
 
   return (
-    <a.group ref={earthRef} {...props}>
+    <a.group ref={earthRef} scale={scale} {...props}>
       <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
     </a.group>
   );
