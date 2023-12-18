@@ -19,7 +19,7 @@ function EarthModel() {
         <Earth position={[0, 0, 0]} />
         <OrbitControls
           autoRotate
-          autoRotateSpeed={2}
+          autoRotateSpeed={2.5}
           enableDamping
           enablePan={false}
           enableZoom={false}
