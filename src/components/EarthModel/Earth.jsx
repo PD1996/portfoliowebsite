@@ -12,7 +12,7 @@ function Earth(props) {
 
   const { scale } = useSpring({
     from: { scale: [0, 0, 0] },
-    to: { scale: [1, 1, 1] },
+    to: { scale: [1.2, 1.2, 1.2] },
   });
 
   useEffect(() => {
