@@ -38,7 +38,7 @@ function App() {
       <div className="section-fullscreen" id="portfolio">
         <Portfolio />
       </div>
-      <div className="section-contact" id="contact">
+      <div className="section-fullscreen" id="contact">
         <Contact />
       </div>
       <div>

@@ -20,12 +20,3 @@
   align-items: center;
   font-family: "Arial", sans-serif;
 }
-
-.section-contact {
-  height: 70vh;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Arial", sans-serif;
-}
