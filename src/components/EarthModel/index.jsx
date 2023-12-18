@@ -8,8 +8,8 @@ function EarthModel() {
   return (
     <section className="earth-container">
       <Canvas
-        camera={{ position: [5, 3, 0.1], near: 0.1, far: 1000 }}
-        pixelRatio={2}
+        camera={{ position: [5, 3, 0.1], near: 0.1, far: 1000, fov: 45 }}
+        pixelratio={2}
       >
         <directionalLight
           color={0xfff6e5}
