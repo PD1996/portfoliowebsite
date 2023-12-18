@@ -1,8 +1,20 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { useEffect } from "react";
 
 import Earth from "./Earth";
 import "./EarthModel.css";
+
+function CameraAdjustment() {
+  const { camera } = useThree();
+
+  useEffect(() => {
+    camera.up.set(0, 0, 1);
+    camera.lookAt(0, 0, 0);
+  }, [camera]);
+
+  return null;
+}
 
 function EarthModel() {
   return (
@@ -11,6 +23,7 @@ function EarthModel() {
         camera={{ position: [5, 3, 0.1], near: 0.1, far: 1000, fov: 45 }}
         pixelratio={2}
       >
+        <CameraAdjustment />
         <directionalLight
           color={0xfff6e5}
           intensity={1.5}
