@@ -1,0 +1,8 @@
+.footer-link {
+  cursor: pointer;
+  color: var(--light-theme-text-color);
+}
+
+body.dark-mode .footer-link {
+  color: var(--dark-theme-text-color);
+}

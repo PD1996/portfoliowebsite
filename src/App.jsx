@@ -38,10 +38,12 @@ function App() {
       <div className="section-fullscreen" id="portfolio">
         <Portfolio />
       </div>
-      <div className="section-fullscreen" id="contact">
+      <div className="section-contact" id="contact">
         <Contact />
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
