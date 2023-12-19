@@ -30,7 +30,7 @@ function Portfolio() {
         </PortfolioCard>
 
         <PortfolioCard
-          title="AI Chess Bot"
+          title="AI Chess Bots"
           link="https://github.com/PD1996/ai-chess-bot"
           cardNumber={2}
           expandedCard={expandedCard}
