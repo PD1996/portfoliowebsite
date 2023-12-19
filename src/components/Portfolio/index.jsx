@@ -36,7 +36,7 @@ function Portfolio() {
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="chess.png" alt="Chessboard" />
+          <img src="chess.gif" alt="Chessboard" />
           <p>
             Will contain multiple chess engines trained in different ways for
             experimental purposes.
