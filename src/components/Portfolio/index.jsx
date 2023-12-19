@@ -22,7 +22,7 @@ function Portfolio() {
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="code.png" alt="Code" />
+          <img src="code.gif" alt="Code" />
           <p>
             A simple React website that uses React Three Fiber for 3D effects.
           </p>
@@ -30,13 +30,13 @@ function Portfolio() {
         </PortfolioCard>
 
         <PortfolioCard
-          title="AI Chess Bot"
+          title="AI Chess Bots"
           link="https://github.com/PD1996/ai-chess-bot"
           cardNumber={2}
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="chess.png" alt="Chessboard" />
+          <img src="chess.gif" alt="Chessboard" />
           <p>
             Will contain multiple chess engines trained in different ways for
             experimental purposes.
@@ -51,7 +51,7 @@ function Portfolio() {
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="pythagorean.png" alt="Pythagorean Theorem Visualization" />
+          <img src="pythagorean.gif" alt="Pythagorean Theorem Visualization" />
           <p>
             A Windows desktop application built with C# and .NET used to
             visualize the Pythagorean Theorem (A² + B² = C²).
