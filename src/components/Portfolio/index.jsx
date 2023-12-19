@@ -22,7 +22,7 @@ function Portfolio() {
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="code.png" alt="Code" />
+          <img src="code.gif" alt="Code" />
           <p>
             A simple React website that uses React Three Fiber for 3D effects.
           </p>
@@ -51,7 +51,7 @@ function Portfolio() {
           expandedCard={expandedCard}
           setExpandedCard={setExpandedCard}
         >
-          <img src="pythagorean.png" alt="Pythagorean Theorem Visualization" />
+          <img src="pythagorean.gif" alt="Pythagorean Theorem Visualization" />
           <p>
             A Windows desktop application built with C# and .NET used to
             visualize the Pythagorean Theorem (A² + B² = C²).
