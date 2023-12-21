@@ -29,6 +29,8 @@ function EarthModel() {
           enableDamping
           enablePan={false}
           enableZoom={false}
+          minPolarAngle={Math.PI / 2 - 0.5}
+          maxPolarAngle={Math.PI / 2 - 0.5}
         />
       </Canvas>
     </section>
