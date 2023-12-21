@@ -1,0 +1,15 @@
+.typing-effect-container {
+  height: 12vh;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+h4 {
+  text-align: left;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}

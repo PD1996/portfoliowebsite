@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import "./TypingEffect.css";
+
 function TypingEffect({ texts }) {
   const [charIndex, setCharIndex] = useState(0);
   const [textIndex, setTextIndex] = useState(0);
@@ -20,7 +22,7 @@ function TypingEffect({ texts }) {
   }, [charIndex, textIndex, texts]);
 
   return (
-    <>
+    <div className="typing-effect-container">
       {texts.slice(0, textIndex).map((item, index) => {
         const Tag = item.tag;
         return <Tag key={index}>{item.text}</Tag>;
@@ -31,7 +33,7 @@ function TypingEffect({ texts }) {
           null,
           texts[textIndex].text.slice(0, charIndex)
         )}
-    </>
+    </div>
   );
 }
 
