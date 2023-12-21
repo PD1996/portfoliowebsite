@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import "./Portfolio.css";
 import PortfolioCard from "./PortfolioCard";
+
+import "./Portfolio.css";
 
 function Portfolio() {
   const [expandedCard, setExpandedCard] = useState(null);

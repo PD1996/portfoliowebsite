@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { useEffect, useState } from "react";
 
 import About from "./components/About";
@@ -7,6 +5,8 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+import "./App.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
