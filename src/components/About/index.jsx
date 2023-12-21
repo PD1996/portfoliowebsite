@@ -19,11 +19,11 @@ function About() {
             tag: "h2",
           },
           {
-            text: "Focus: Machine Learning, Data Science and Backend Development",
+            text: "Focus | Machine Learning, Data Science and Backend Development",
             tag: "h4",
           },
           {
-            text: "Featured Skills: SQL | C# | Java | Python | React.js",
+            text: "Featured Skills | SQL, C#, Java, Python, React.js",
             tag: "h4",
           },
         ]}
