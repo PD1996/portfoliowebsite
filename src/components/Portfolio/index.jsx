@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./Portfolio.css";
 import PortfolioCard from "./PortfolioCard";
 
@@ -10,8 +11,8 @@ function Portfolio() {
       <h1>Portfolio</h1>
       <div className="text-container">
         <p>
-          Here are some fun personal projects I've worked on (or am currently
-          working on) in my spare time!
+          A few personal projects I've worked on (or am currently working on) in
+          my spare time
         </p>
       </div>
       <div className="portfolio-container">
