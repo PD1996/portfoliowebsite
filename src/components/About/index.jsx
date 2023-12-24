@@ -29,7 +29,7 @@ function About() {
           },
         ]}
       />
-      <Suspense fallback={<div>Loading 3D Earth Model...</div>}>
+      <Suspense fallback={null}>
         <EarthModel />
       </Suspense>
     </div>
