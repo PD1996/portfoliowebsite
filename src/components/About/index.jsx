@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 import TypingEffect from "../TypingEffect";
-import EarthModel from "../EarthModel";
 
 import "./About.css";
+
+const EarthModel = lazy(() => import("../EarthModel"));
 
 function About() {
   return (
@@ -28,7 +29,9 @@ function About() {
           },
         ]}
       />
-      <EarthModel />
+      <Suspense fallback={<div>Loading 3D Earth Model...</div>}>
+        <EarthModel />
+      </Suspense>
     </div>
   );
 }
