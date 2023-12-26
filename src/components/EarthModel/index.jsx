@@ -18,6 +18,7 @@ function EarthModel() {
         }}
         pixelratio={2}
       >
+        <ambientLight intensity={0.5} />
         <directionalLight
           color={0xfff6e5}
           intensity={1.5}
