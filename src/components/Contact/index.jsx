@@ -51,7 +51,7 @@ function Contact() {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Name *"
               required
               value={formData.name}
               onChange={handleChange}
@@ -59,7 +59,7 @@ function Contact() {
             <input
               type="email"
               name="_replyto"
-              placeholder="Email"
+              placeholder="Email *"
               required
               value={formData._replyto}
               onChange={handleChange}
@@ -73,7 +73,7 @@ function Contact() {
             />
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Message *"
               required
               value={formData.message}
               onChange={handleChange}
