@@ -11,10 +11,7 @@ function Portfolio() {
     <div id="portfolio">
       <h1>Portfolio</h1>
       <div className="text-container">
-        <p>
-          A few personal projects I've worked on (or am currently working on) in
-          my spare time
-        </p>
+        <p>A few personal projects I've worked on in my spare time</p>
       </div>
       <div className="portfolio-container">
         <PortfolioCard
