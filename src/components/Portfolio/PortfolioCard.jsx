@@ -35,14 +35,16 @@ function PortfolioCard({
             icon={expandedCard === cardNumber ? faChevronUp : faChevronDown}
           />
         </span>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="card-link-icon"
-        >
-          <FontAwesomeIcon icon={faExternalLinkAlt} />
-        </a>
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link-icon"
+          >
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
+          </a>
+        )}
       </h3>
       <div className="card-content">{children}</div>
     </div>
