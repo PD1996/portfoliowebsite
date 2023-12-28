@@ -76,6 +76,14 @@ body.dark-mode .portfolio-card {
   transition: max-height 0.3s ease;
 }
 
+.card-content p {
+  text-align: left;
+}
+
+.card-content h5 {
+  text-align: center;
+}
+
 .toggle-arrow {
   margin-left: 10px;
   user-select: none;
