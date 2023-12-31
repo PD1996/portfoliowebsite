@@ -1,4 +1,15 @@
-.earth-container {
-  width: 100vw;
-  height: 80vh;
+/* Computer screens */
+@media screen and (min-width: 769px) {
+  .earth-container {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+/* Phone screens */
+@media screen and (max-width: 768px) {
+  .earth-container {
+    width: 100vw;
+    height: 55vh;
+  }
 }

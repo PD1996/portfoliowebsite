@@ -2,6 +2,20 @@
   height: 12vh;
 }
 
+/* Computer screens */
+@media screen and (min-width: 769px) {
+  .typing-effect-container {
+    height: 12vh;
+  }
+}
+
+/* Phone screens */
+@media screen and (max-width: 768px) {
+  .typing-effect-container {
+    height: 37vh;
+  }
+}
+
 h2 {
   text-align: left;
   padding-left: 10vw;

@@ -1,3 +1,4 @@
+/* Computer screens */
 @media screen and (min-width: 769px) {
   .about-container {
     width: 100%;
@@ -6,6 +7,7 @@
   }
 }
 
+/* Phone screens */
 @media screen and (max-width: 768px) {
   .about-container {
     width: 100%;
