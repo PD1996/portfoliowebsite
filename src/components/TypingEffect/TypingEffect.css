@@ -12,7 +12,7 @@
 /* Phone screens */
 @media screen and (max-width: 768px) {
   .typing-effect-container {
-    height: 37vh;
+    height: 30vh;
   }
 }
 
