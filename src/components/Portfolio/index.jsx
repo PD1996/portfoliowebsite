@@ -23,8 +23,8 @@ function Portfolio() {
         >
           <img src="code.gif" alt="Code" />
           <p>
-            A simple React.js website that uses React Three Fiber for 3D
-            effects.
+            A simple React.js website that uses React Three Fiber (a Three.js
+            wrapper) for 3D effects.
           </p>
           <h5>2023</h5>
         </PortfolioCard>
